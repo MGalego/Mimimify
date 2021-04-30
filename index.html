@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Convierte cualquier texto en un mimimi">
+    <meta name="author" content="Manu Gallego">
+    <meta name="generator" content="Mgalego">
+
+    <title>Mimimify v1.0.1</title>
+
+    <link rel="canonical" href="https://www.mimimify.com">
+    <link rel="preload" href="assets/js/scripts.js" as="script">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="preload" as="style" href="assets/dist/css/bootstrap.min.css">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="preload" as="style" href="assets/css/styles.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body class="text-center">
+<main class="form-mimimi">
+    <div class="section">
+        <h1 class="h3 mb-3 fw-normal logo">Mimimify</h1>
+        <input type="text" id="mimimiText" oninput="changeText()" class="form-control"
+               placeholder="Introduce el texto a mimimificar" required autofocus>
+        <div class="input-group-append">
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="result" class="result content form-control">
+            <button onclick="copyElementText('result')" class="btn btn-outline-secondary" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-clipboard"
+                     viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+    <div class="section">
+        <p class="mt-5 mb-3">¿Harto de mimificar manualmente? Eso se acabó con Mimimify, introduce el texto y copia el
+            resultado en tu portapapeles.</p>
+        <p class="mt-5 mb-3 text-muted">&copy; 2021 <a href="https://twitter.com/mgalego" target="_blank"
+                                                       title="Manu Gallego" class="text-muted"> Manu Gallego</a></p>
+    </div>
+</main>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>
